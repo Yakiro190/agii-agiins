@@ -1,13 +1,29 @@
 # AGI Insider
 
-Static landing page for AGI Insider.
+Статический landing page проект для деплоя на Vercel.
 
-## Run locally
-Open `index.html` in browser.
+## Структура
 
-## Deploy
-Project is linked to Vercel and can be deployed with:
+- `index.html` — разметка страницы
+- `assets/css/styles.css` — стили
+- `assets/js/main.js` — клиентский JS
+- `assets/images/` — изображения
+- `docs/` — документация
+- `.github/workflows/` — CI workflow
+- `vercel.json` — конфиг деплоя
+
+## Локальный запуск
 
 ```bash
-vercel deploy --prod
+npm run dev
 ```
+
+После запуска открой: `http://localhost:4173`
+
+## Деплой
+
+```bash
+npm run deploy
+```
+
+Или через push в GitHub, если проект подключен в Vercel.
